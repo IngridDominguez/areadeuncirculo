@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var radio,area;
+function resul(){
+radio=parseFloat(document.getElementById("textradio").value);
+area=3.1416*(radio*radio);
+alert("El área es:"+area);
+}
+
+</script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Área de un circulo</h1>
+	</div>
+	<div data-role="content">	
+		<table width="0" border="0">
+  <tr>
+    <td>
+      <label for="textinput">Introduce el radio:</label>
+      
+    </td>
+    <td><input type="text" name="textradio" id="textradio" value=""  /></td>
+  </tr>
+  <tr>
+    <td> <label for="textinput">Calcula área</label></td>
+    <td><button onClick="resul()">CALCULAR</button></td>
+  </tr>
+</table>
+	
+	</div>
+	<div data-role="footer">
+		<h4>Autor: Dominguez Lezama Ingrid Samantha</h4>
+	</div>
+</div>
+
+
+</body>
+</html>
